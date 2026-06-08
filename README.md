@@ -45,7 +45,7 @@ RegVault is a centralized web application for GRC professionals to discover, sea
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/regvault.git
+git clone https://github.com/Rishabvh/RegVault.git
 cd regvault
 
 # Install dependencies
