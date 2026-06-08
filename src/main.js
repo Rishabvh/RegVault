@@ -3,6 +3,7 @@
  * SPA Router, Theme Management, and Shared Utilities
  */
 
+import { inject } from '@vercel/analytics';
 import { renderDashboard } from './pages/dashboard.js';
 import { renderRegulatorPage } from './pages/regulator.js';
 import { renderSearchPage } from './pages/search.js';
@@ -231,6 +232,9 @@ function isRecentlyIssued(dateStr, days) {
 
 // ---- Initialization ----
 async function init() {
+  // Initialize Vercel Web Analytics
+  inject();
+
   // Load theme
   initTheme();
 
