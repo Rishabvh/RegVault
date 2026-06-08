@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "uat": true,
+      "dev": true
+    }
+  }
+}
