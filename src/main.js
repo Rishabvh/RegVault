@@ -4,6 +4,7 @@
  */
 
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import { renderDashboard } from './pages/dashboard.js';
 import { renderRegulatorPage } from './pages/regulator.js';
 import { renderSearchPage } from './pages/search.js';
@@ -234,6 +235,9 @@ function isRecentlyIssued(dateStr, days) {
 async function init() {
   // Initialize Vercel Web Analytics
   inject();
+
+  // Initialize Vercel Speed Insights
+  injectSpeedInsights();
 
   // Load theme
   initTheme();
